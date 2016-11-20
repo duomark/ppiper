@@ -9,6 +9,7 @@
 %%% @end
 %%%------------------------------------------------------------------------------
 -module(ppiper_sup).
+-author('Jay Nelson <jay@duomark.com>').
 -behaviour(supervisor).
 
 %%% External API
