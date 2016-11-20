@@ -35,7 +35,7 @@ SP = 4
 V = 0
 
 ## Dependencies for building
-## DEPS = eper
+DEPS = eper
 
 ### Test parameters
 TEST_DEPS = proper

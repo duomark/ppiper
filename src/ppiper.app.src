@@ -1,0 +1,22 @@
+%% -*- mode: erlang -*-
+%% -*- tab-width: 4;erlang-indent-level: 4;indent-tabs-mode: nil -*-
+%% ex: ts=4 sw=4 et
+
+%%%------------------------------------------------------------------------------
+%%% @copyright (c) 2016, DuoMark International, Inc. All Rights Reserved.
+%%% @author Jay Nelson <jay@duomark.com>
+%%%------------------------------------------------------------------------------
+
+{application, ppiper,
+ [
+  {description, "Pied Piper catches URL content"},
+	{vsn,   "0.1.0"},
+	{mod,   {ppiper_app, []}},
+	{env,   []},
+
+	{applications,          [kernel, stdlib]},
+        {included_applications, [inets]         },
+
+	{registered, [            ppiper_fetch, ppiper_sup]},
+	{modules,    [ppiper_app, ppiper_fetch, ppiper_sup]}
+]}.
